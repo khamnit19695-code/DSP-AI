@@ -2,9 +2,11 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
+
 android {
     namespace = "com.my31bandeq"
     compileSdk = 35
+
     defaultConfig {
         applicationId = "com.my31bandeq"
         minSdk = 23
@@ -12,4 +14,11 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+        }
+    }
 }
+
